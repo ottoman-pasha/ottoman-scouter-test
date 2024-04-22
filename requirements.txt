@@ -1,6 +1,6 @@
-Flask
 Gunicorn
-Websocket
-Json
-Threading
+Flask
+json
+websocket-client
+flask
 
