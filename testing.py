@@ -25,9 +25,4 @@ def websocket_thread():
 def index():
     return render_template('index.html', rel_data=rel_data)
 
-if __name__ == '__main__':
-    websocket_thread = threading.Thread(target=websocket_thread)
-    websocket_thread.daemon = True
-    websocket_thread.start()
-    app.run(debug=False)  # Set debug to False for deployment
 
