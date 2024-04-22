@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(7, 11, 22);
+    font-family: "Outfit";
+    margin-top: 200px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 199, 78);
+    
+}
+
+p {
+    color: aliceblue;
+    font-weight: 100;
+}
+
+#pretext {
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(255, 199, 78);
+    border-radius: 20px;
+    font-weight: 700;
+    color: rgb(7, 11, 22);
+}
