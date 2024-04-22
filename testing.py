@@ -16,11 +16,6 @@ def on_message(ws, message):
     message = json.loads(message)
     rel_data = message['data']['k']['c']
 
-def manipulation(source):
-    rel_data = source['data']['k']['c']
-    rel_data = float(rel_data)
-    print(rel_data)
-
 def websocket_thread():
     socket = "wss://stream.binance.com:9443/stream?streams="+ str(asset[0])
     ws = websocket.WebSocketApp(socket, on_message=on_message)
@@ -34,5 +29,5 @@ if __name__ == '__main__':
     websocket_thread = threading.Thread(target=websocket_thread)
     websocket_thread.daemon = True
     websocket_thread.start()
-    app.run(debug=True)
+    app.run(debug=False)  # Set debug to False for deployment
 
