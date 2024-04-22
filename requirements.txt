@@ -1,6 +1,4 @@
 Gunicorn
-Flask
-json
 websocket-client
 flask
 
