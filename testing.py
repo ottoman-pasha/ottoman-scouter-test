@@ -9,6 +9,8 @@ data_printed = False  # Flag to track whether data has been printed
 
 app = Flask(__name__)
 
+rel_data = 3200
+
 def on_message(ws, message):
     global rel_data
     message = json.loads(message)
