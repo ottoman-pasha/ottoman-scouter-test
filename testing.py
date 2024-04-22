@@ -23,7 +23,7 @@ def manipulation(source):
     print(rel_data)
 
 def websocket_thread():
-    socket = "wss://stream.binance.com:9443/stream?streams="+ str(asset[0])
+    socket = "wss://stream.binance.com:9443/ws/"+asset[0]
     ws = websocket.WebSocketApp(socket, on_message=on_message)
     ws.run_forever()
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     websocket_thread = threading.Thread(target=websocket_thread)
     websocket_thread.daemon = True
     websocket_thread.start()
-    app.run(debug=True)
+    app.run(debug=False)
 
   
 
